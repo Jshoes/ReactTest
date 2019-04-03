@@ -1,0 +1,115 @@
+.jobdetail-box{
+  background-color: #fff;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  .ant-tabs-content{
+    flex:1;
+  }
+  .baseinfo-item{
+    line-height: 32px;
+  }
+  /*tabs1*/
+  .ant-tabs-bar{
+    width:200px;
+    background: #f7f7f7;
+    .ant-tabs-nav-container{
+      padding-top:50px;
+      .ant-tabs-nav{
+        .ant-tabs-tab{
+          height: 50px;
+          line-height: 35px;
+          font-size: 18px;
+          text-align: left;
+          text-indent: 10px;
+          &.ant-tabs-tab-active{
+            background: #32a0ee;
+            color:#fff;
+          }
+        }
+      }
+    }
+  }
+  .firstStep-box{
+    /*个人信息展示*/
+    .jobdetail-infoshow{
+        padding: 20px 100px 0 30px;
+        position: relative;
+        .baseinfo-item{
+          line-height: 30px;
+          font-size: 14px;
+        }
+    }
+    /*个人信息编辑*/
+    .jobdetail-infoedit{
+      padding: 50px 100px 0 30px;
+      position: relative;
+
+      .editSaveBtn{
+        right:20px;
+        position: absolute;
+      }
+      .addSaveBtn{
+        top:10px;
+        right: 20px;
+        position: absolute;
+      }
+    }
+    /*操作按钮*/
+    .optionBox{
+
+      position: relative;
+      padding-top:20px;
+      text-align: center;
+
+      >button:not(.edit-button){
+        width: 60%;
+        margin-bottom:30px;
+      }
+
+      .edit-button{
+        position: absolute;
+        left:-104px;
+        top:20px;
+        background-color: #e2e2e2;
+      }
+
+    }
+  }
+  /*tabs2*/
+
+  .secondStep-panel{
+    .addSaveBtn{
+      position: absolute;
+      right: 60px;
+      top: 10px;
+    }
+  }
+  .secondStep-box{
+    padding: 50px 100px 20px 20px;
+    .responsiItem{
+      border:1px solid #eee;
+      padding: 30px;
+      margin: 20px;
+      .content{
+        margin-top:10px;
+
+        .tags{
+
+        }
+      }
+    }
+  }
+  /*tabs3*/
+  .thirdStep-panel{
+    .releaseJob{
+      position: absolute;
+      right: 60px;
+      top: 10px;
+    }
+  }
+  .thirdStep-box{
+    padding: 60px 100px 20px 20px;
+  }
+
+}

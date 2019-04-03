@@ -1,0 +1,308 @@
+@import "~antd/dist/antd.less";
+@primary-color : #32a0ee;
+@body-background : #e6e9f0;
+@font-size-base : 12px;
+@font-size-lg : @font-size-base + 2px;
+@font-size-sm : @font-size-base - 2px;
+
+@font-family  :"Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@border-color-base : #cfdae5;
+
+@table-header-bg : #fafdff;
+@table-row-hover-bg : #f7f8fa;
+@form-item-margin-bottom     : 12px;
+
+@border-radius-base : 0px;
+@border-radius-sm :0px;
+.ant-menu-dark, .ant-menu-dark .ant-menu-sub,.ant-menu-dark .ant-menu-inline.ant-menu-sub{
+	 background: #2d3e50;
+	 box-shadow:none;
+}
+
+.ant-menu-inline-collapsed{
+	width: 60px;
+}
+.ant-menu-inline-collapsed > .ant-menu-item, .ant-menu-inline-collapsed > .ant-menu-item-group > .ant-menu-item-group-list > .ant-menu-item, .ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title{
+	padding:0 0 0 22px !important;
+}
+
+
+.ant-modal{
+  &-content{
+		background-color: #f8f8f8;
+    border-radius:0;
+  }
+	&-close-x{
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+	}
+  &-header{
+		background-color: #f8f8f8;
+		padding:13px 20px;
+		// border-bottom:@primary-color 2px solid ;
+		border-width: 0;
+
+  }
+	&-footer{
+		padding: 9px 16px;
+	}
+}
+
+.ant-table-fixed-header{
+	.ant-table-title{
+		padding:0;
+	}
+
+	.ant-table-header{
+		// margin-bottom: -17px;
+		// padding-bottom: 0px;
+		// margin-right: 17px;
+		// background: #fafdff;
+		// overflow-y: hidden !important;
+		.ant-table-selection-column{
+			position: relative;
+			z-index: 999;
+		}
+	}
+}
+
+.ant-table-wrapper {
+	display: flex;
+	flex:1;
+	.ant-spin-nested-loading,.ant-spin-container,.ant-table-fixed-header,.ant-table-content,.ant-table-scroll{
+		display: flex;
+		flex-direction: column;
+		flex:1;
+	}
+	.ant-table-scroll{
+		position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+		/*
+		.ant-table-header{
+			overflow-y: hidden;
+			border-right:#f1f1f1 solid 17px;
+
+		}
+		*/
+	}
+	.ant-table-body{
+		max-height:none !important;
+		flex:1;
+	}
+	.ant-table-placeholder{
+		position: absolute;
+    left: 50%;
+    top: 50%;
+    border-width: 0;
+    margin-left: -20px;
+	}
+}
+.ant-table{
+	table{
+		border-radius:0;
+		border-top:#e8e8e8 1px solid;
+		border-bottom:#e8e8e8 1px solid;
+	}
+	&.ant-table-empty{
+		min-height: 100px;
+	}
+
+  &-title{
+		&-toolbar{
+			position: absolute;
+	    left: 0;
+	    right: 0;
+	    background-color: #f0f0f0;
+	    top: 0;
+			height: 49px;
+			line-height: 49px;
+	    z-index: 90;
+	    border-radius: 0;
+			padding: 0 10px 10px 70px!important;
+			text-align: left;
+			font-size: 14px;
+			.countNum{
+				color:#3ba4ee;
+			}
+			>div{
+				display: inline-block;
+				.ant-btn-group{
+					font-size: 14px;
+					margin-left:30px;
+					.ant-btn{
+						height: 16px;
+						font-size: 14px;
+						background: transparent;
+						border-color: #cfdae5;
+						border-width: 0 0 0 1px;
+					}
+				}
+			}
+		}
+	}
+	&-thead{
+		& > tr > th{
+			background:#f0f0f0;
+			padding:15px 10px;
+			font-size:14px;
+		/*	white-space: nowrap; */
+			border-bottom: 0px solid @border-color-base;
+			border-top: 0px solid @border-color-base;
+		}
+	}
+	&-tbody{
+		> tr > td{
+			padding:15px 10px;
+		}
+	}
+
+	.ant-table-content{
+		border-radius:0;
+		.ant-table-tbody{
+
+			.ant-table-row {
+				&:nth-child(even){
+					background-color: #fafbfc;
+				}
+				.ant-btn-group{
+					 white-space: nowrap;
+				}
+			}
+
+		}
+	}
+
+	&-pagination.ant-pagination{
+		margin:0;
+		text-align: right;
+		padding:9px 0;
+		// background-color: @table-header-bg;
+		.ant-pagination-total-text{
+			float:right;
+		}
+		.ant-pagination-item-active{
+			background: #a3b8cd;
+			border-color:#a3b8cd;
+			&:hover{
+				border-color: #a3b8cd;
+			}
+			a{
+				color:#fff;
+			}
+		}
+	}
+	&-fixed-header > .ant-table-content > .ant-table-scroll > .ant-table-body{
+		margin-bottom: -1px;
+	}
+}
+
+.ant-calendar-picker{
+	.ant-pagination-item{
+	}
+	.ant-calendar-picker-clear, .ant-calendar-picker-icon{
+		right:5px;
+	}
+}
+
+.ant-card{
+	display: flex;
+	flex:1;
+	flex-direction: column;
+	font-family: "Microsoft YaHei";
+	&-extra{
+		padding: 10px 0;
+	}
+	.ant-card-head{
+		min-height: 40px;
+		padding:0 20px;
+		background-color: transparent;
+		.ant-card-head-title{
+			padding:10px 0;
+			.card-title {
+					margin-top: 5px;
+					margin-bottom: 0;
+					font-size: 18px;
+					font-weight: bold;
+					display: inline-block;
+			}
+			.card-subtitle {
+					font-size: 12px;
+					padding-left: 12px;
+			}
+		}
+	}
+	&-wider-padding .ant-card-body{
+		padding: 18px 30px;
+	}
+	&.ant-card-type-inner{
+		.ant-card-body,.ant-card-body>div{
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			flex:1;
+			.ant-table-wrapper{
+				flex:1;
+			}
+		}
+		.ant-card{
+			.ant-card-body{
+				padding: 10px;
+			}
+		}
+
+	}
+}
+.ant-form-item{
+	.ant-form-item-label{
+		text-align: left;
+	}
+	.ant-form-item-control {
+		.ant-calendar-picker{
+			display: block;
+		}
+		textarea.ant-input{
+			 resize: none;
+		}
+	}
+	.ant-input-group{
+		.ant-select-selection{
+			border-radius: 0 !important;
+		}
+
+	}
+}
+.ant-btn-group{
+	vertical-align: bottom;
+}
+
+.ant-spin-nested-loading,.ant-spin-container{
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+.DropDownSlider-popup{
+	background: #fff;
+	z-index: 9999;
+
+}
+.ant-fullcalendar-header{
+	.ant-select-dropdown-menu-item{
+		 text-overflow: inherit;
+	}
+}
+
+.config-popup{
+	float:right;
+	background: #fff;
+}
+.rc-trigger-popup-hidden{
+	display: none;
+}
+
+form .ant-select:only-child, form .ant-cascader-picker:only-child, form .ant-calendar-picker:only-child{
+	top:0px;
+}

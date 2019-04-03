@@ -1,0 +1,426 @@
+.personInfoTabs{
+  display: flex;
+  flex:1;
+  flex-direction: column;
+  [role="tabpanel"]{
+    padding: 20px;
+  }
+  .ant-tabs-nav{
+    .ant-tabs-tab{
+      margin-right: 10px;
+    }
+  }
+  .ant-tabs-content{
+    display: flex;
+    flex: 1;
+		flex-direction: column;
+		overflow-y: auto;
+    .ant-tabs-tabpane{
+      flex:1;
+      overflow-y: auto;
+    }
+  }
+}
+/*简历详情头部样式*/
+.person-info-pannel{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px 0 0 0;
+  background-color: #fff;
+  .person-info-head{
+    padding-left: 20px;
+
+    .delete-btn{
+      border:none;
+      position: absolute;
+      right: 60px;
+      top: 10px;
+      z-index: 10;
+    }
+    .headInfoName{
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .hasApply{
+      padding: 5px 10px;
+      margin-left: 10px;
+      background-color: #2298ef;
+      color:#fff;
+    }
+    .headInfoBottom{
+      margin-top: 10px;
+      margin-bottom: 10px;
+      .info-item{
+        margin-right: 10px;
+        i{
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  /*基本信息编辑*/
+  .baseInfo-edit{
+    img{
+      width:100%;
+    }
+  }
+
+  .person-info-body{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*备注信息部分*/
+.PersonRemarksBox{
+  .remarks_text{
+    height: 180px;
+    position: relative;
+    .ant-form-item{
+        margin-bottom: 0;
+    }
+    .Textarea{
+      resize:none ;
+    }
+    .button_save{
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .remarks_list{
+    .ant-list-item-meta-title{
+      color: #368feb;
+    }
+  }
+  .ant-btn{
+    border: none;
+  }
+}
+/*offer部分*/
+.personInfoTabs .no-offer-record{
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  text-align: center;
+  background-size: 110px;
+  background-position: center;
+}
+
+/*求职意向*/
+.objective-info{
+  .baseinfo-item{
+    display: inline-block;
+    line-height: 24px;
+    width: 45%;
+  }
+}
+/*沟通记录部分*/
+.comunitcattionItem{
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.feedRecord-box{
+  padding-top: 50px;
+  position: relative;
+  .add-feed{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  /*面试缺省*/
+  .feed-no-data{
+    padding-top: 180px;
+    text-align: center;
+    background-position-x: center;
+  }
+  /*item*/
+  .feedRecored-item{
+
+    padding: 0 30px 0 10px;
+
+    .item-head{
+      font-size: 14px;
+      padding: 10px 20px;
+      .item-head-time{
+        margin-left: 10px;
+      }
+      .feed-status{
+        float: right;
+        color: #808080;
+      }
+    }
+    .item-body{
+      border:1px solid #cccccc;
+
+      .item-feed-info{
+        padding: 20px 50px;
+        .interview-stage-tag{
+          margin-left: 80px;
+        }
+        >.ant-btn-group{
+          float: right;
+          button{
+            border:none;
+            color:#209beb;
+          }
+        }
+      }
+
+      .item-feedback-info{
+        .item-feedback{
+          background-color: #f7f7f7;
+          padding: 10px 50px;
+          line-height: 35px;
+          position: relative;
+            button{
+              float: right;
+              border: none;
+              background-color: transparent;
+              color:#209beb;
+            }
+          .feedback-state{
+            position: absolute;
+            left: 250px;
+          }
+        }
+      }
+    }
+  }
+
+  /*reset*/
+  .ant-timeline-item-head{
+    border-radius: 50%;
+    background-color: #64b1f7;
+    padding:10px;
+  }
+  .ant-timeline-item-content{
+    padding-left: 30px;
+  }
+}
+
+
+/*基本信息部分*/
+.personBaseInfoPanel{
+  margin-top: 20px;
+  .personinfo-detailHead{
+    border: 1px solid #e6e6e6;
+    padding:10px;
+    position: relative;
+
+    /**编辑按钮*/
+    .part-editBtn{
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      border: none;
+      color:#58b1f0;
+    }
+    /*头像*/
+    .person-headicon{
+      width:80px;
+      height: auto;
+      border-radius: 50%;
+      margin: 0 20px;
+    }
+    /*简介*/
+    .personinfo-headInfo{
+      display: inline-block;
+      vertical-align: bottom;
+
+      .contactInfo{
+
+        span{
+
+          margin-right: 20px;
+          i{
+            margin-right:10px;
+            font-size: 14px;
+            color:#333;
+          }
+        }
+      }
+    }
+  }
+
+  /*其他信息*/
+  >.otherInfo{
+    padding: 10px;
+    border:1px solid #e6e6e6;
+    margin-top: 10px;
+    >div{
+      padding: 10px;
+      position: relative;
+      padding-right: 60px;
+
+      /*编辑按钮*/
+      .part-editBtn{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        border: none;
+        color:#58b1f0;
+      }
+
+      &:not(:last-of-type){
+        border-bottom:1px solid #e6e6e6;
+      }
+      >h3{
+        color:#32a0eb;
+
+        .add-title{
+          // float: right;
+          font-size: 12px;
+          border: none;
+          color:#32a0eb;
+          position: absolute;
+          right: 0;
+        }
+      }
+      >div{
+        position: relative;
+        >h4>.item-edit-btn{
+          position: absolute;
+          right: -60px;
+          font-size: 12px;
+          border: none;
+          color:#32a0eb;
+        }
+      }
+    }
+  }
+
+}
+/*步骤条*/
+.resumeStatus{
+  .ant-steps-item{
+    .ant-steps-item-tail{
+      top:9px;
+      margin:0 0 0 20px;
+    }
+    .ant-steps-item-icon{
+      margin-left: 12px;
+      width:20px;
+      height: 20px;
+    }
+    .ant-steps-item-content{
+      width:100%;
+      text-align: left;
+      text-indent: 5px;
+      visibility: hidden;
+    }
+    &.ant-steps-item-process{
+      .ant-steps-item-content{
+        visibility: visible;
+      }
+    }
+  }
+  .ant-steps-item-process.ant-steps-item{
+    .ant-steps-item-icon{
+      width:20px;
+      height: 20px;
+    }
+  }
+}
+.person-edit-option{
+  /*特殊处理 ant-button block 和 half-block*/
+  background: #f4f4f6;
+  flex:1;
+  margin-left:10px;
+  margin-top: 40px;
+  overflow-y: auto;
+  >.ant-btn-group{
+    padding: 20px;
+    width: 100%;
+  }
+  /*锁定信息*/
+  .lockedInfo{
+    .baseinfo-item{
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+  }
+  /*简历阶段*/
+  .resumeStatus{
+    height: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #e2eaec;
+  }
+  .ant-btn-group.ant-dropdown-button.next-block{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin-bottom: 0;
+    .ant-btn.ant-btn-default{
+      flex:10;
+      margin-right: 0;
+      margin-left:-1px;
+    }
+    .ant-btn.ant-dropdown-trigger.ant-btn-default{
+      flex:auto;
+      margin-right: 0;
+    }
+  }
+  .ant-btn-group .ant-btn,.ant-btn-group .ant-dropdown-button{
+    margin-right: 2%;
+    margin-bottom:20px;
+  	&.block{
+  		width:96%;
+      margin-left: 2%;
+  	}
+  	&.half-block{
+  		width:46%;
+      margin-left: 2%;
+  	}
+  }
+}
+
+.ant-dropdown-menu-item{
+  .ant-btn-ghost{
+    border:0;
+  }
+}
+.resume-toolbar{
+  position:absolute;
+  top:50px;
+  left:20px;
+  right:35px;
+  background-color: #fff;
+  z-index: 10;
+  .ant-btn-group{
+    background-color: #fff;
+    .ant-btn{
+      background-color: #e0e0e0;
+      border-width: 0;
+      font-size: 16px;
+      margin-left:10px !important;
+    }
+  }
+}
+// elite
+.elite-head{
+	dl{
+		padding-left: 20px;
+		padding-top: 20px;
+    padding-right: 20px;
+		margin: 0;
+		dt,dd{
+			display: inline-block;
+			margin: 0;
+		}
+	}
+	h2{
+		padding-left: 20px;
+		margin-top: 10px;
+		margin-bottom: 0;
+	}
+	>.ant-btn-group{
+    padding: 20px;
+    width: 100%;
+  }
+}

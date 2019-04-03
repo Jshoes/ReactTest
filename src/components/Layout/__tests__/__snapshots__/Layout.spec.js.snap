@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`测试layout布局组件 测试组件props传递 1`] = `
+<div
+  className="layout"
+  style={
+    Object {
+      "display": "flex",
+      "flex": "1",
+      "flexDirection": "column",
+      "overflow": "hidden",
+    }
+  }
+/>
+`;
+
+exports[`测试layout布局组件 测试组件错误props传递 1`] = `
+<div
+  className="layout"
+  style={
+    Object {
+      "display": "flex",
+      "flex": "1",
+      "flexDirection": "rows",
+      "overflow": "hidden",
+    }
+  }
+/>
+`;

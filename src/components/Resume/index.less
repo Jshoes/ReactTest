@@ -1,0 +1,231 @@
+
+@lineHeightInResume:30px;
+@channelHeight:30px;
+.resume-background{
+  background-color: #fff;
+  line-height: @lineHeightInResume;
+  padding: 24px 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  overflow-y:auto;
+
+  &>div>div:not(.DetailSideBar){
+    padding:15px 24px;
+    &:nth-child(2){
+      border-bottom: 10px solid #e3e6ed;
+    }
+    &:not(:nth-child(2)):not(:last-child){
+      border-bottom: 1px solid #e3e6ed;
+    }
+  }
+
+
+  .channelTabs{
+    width:100%;
+    height:@channelHeight;
+    margin-bottom: 10px;
+    line-height:@channelHeight;
+    background-color: #fff;
+    a{
+      width:100px;
+      height:@channelHeight;
+      text-align: center;
+      display: block;
+      float:left;
+      background-color: #f2f2f2;
+      color: #333;
+      &.theChoose{
+        background-color: #fff;
+      }
+    }
+  }
+  .resume-mainInfo{
+    padding-bottom: 10px;
+    position: relative;
+    .resume-avatar{
+      height:90px;
+      text-align: center;
+      >img{
+        width:90px;
+        max-height: 90px;
+        max-width:100%;
+      }
+    }
+    .person-row{
+      .person-item{
+        font-size: 16px;
+
+        .personal-jobWanted{
+          margin-left: 10px;
+          color: #f8635d;
+        }
+      }
+      .persoal-mobile{
+        cursor: pointer;
+      }
+      .persoal-email{
+        margin-left: 30px;
+      }
+    }
+    .resume-option-box{
+      position: absolute;
+      right:20px;
+      top:0;
+
+      .ant-btn-group > .ant-btn-group{
+        float: none;
+      }
+    }
+  }
+  strong.spacial{
+    font-size:14px;
+  }
+  .eliteEditBtn{
+    position: absolute;
+    right:0;
+    color: #2390f9;
+    cursor: pointer;
+    .anticon{
+      margin-right:3px;
+    }
+  }
+
+}
+
+
+/*label show styles*/
+@paddingLeft:70px;
+.labelshow-box{
+  width:100%;
+  height:auto;
+  min-height: 30px;
+  position: relative;
+  box-sizing: border-box;
+  padding-left: @paddingLeft;
+  font-size: 12px;
+  line-height: @lineHeightInResume;
+  >label{
+    width:@paddingLeft;
+    height:@lineHeightInResume;
+    position: absolute;
+    left: 0;
+    top:0;
+    text-align: right;
+  }
+  >span{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.DetailSideBar{
+  width:0;
+  position: fixed;
+  right:15px;
+  top:10px;
+  bottom: 0;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  z-index: 999;
+  .DetailSideBar-expand-btn{
+    position: absolute;
+    top:50%;
+    left:-15px;
+    height: 60px;
+    margin-top: -30px;
+    color:#2390f9;
+    padding: 0 !important;
+  }
+  .SideBar-content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: -6px -4px 9px RGBA(0,0,0,.12);
+    >.ant-card-bordered{
+      overflow-y:auto;
+	     height:0;
+
+       &:last-child{
+         margin-top:-1px;
+       }
+       .ant-card-body .ant-collapse-item{
+         border-bottom: none;
+       }
+    }
+  }
+}
+
+.DetailSideBar-expand{
+  width:400px;
+}
+
+.SideBar-content{
+
+  .elite-follow-addbtn{
+    position:absolute;
+    right:10px;
+    top:5px;
+    border:none;
+  }
+  .ant-card-bordered{
+    .ant-card-body{
+      padding: 20px 10px;
+    }
+  }
+}
+.eliteForm-btnGroup{
+  text-align: center;
+
+  >button{
+   margin-right: 20px;
+  }
+}
+
+.imgBox{
+  img{
+    width: 60px;
+    height: 60px;
+  }
+}
+
+.personal-tag-tip{
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  color: #928787;
+  font-size: 12px;
+}
+
+
+/**去除下拉按钮边框*/
+.ant-dropdown-menu{
+  >.ant-dropdown-menu-item{
+    >button.ant-btn{
+      border: none;
+      background-color: transparent;
+      width:100%;
+    }
+  }
+}
+
+/*简历详情查看面试 去掉月视图*/
+.resumeDetail-calendar{
+  >.ant-fullcalendar-header {
+    > .ant-radio-group.ant-radio-group-small {
+      display: none;
+    }
+  }
+}
+
+.resumeDetail-window{
+  .ant-modal-close{
+    right:20px;
+  }
+  .ant-modal-body{
+    box-shadow: -6px -4px 9px RGBA(0,0,0,.12);
+  }
+}

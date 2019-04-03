@@ -1,0 +1,62 @@
+
+.EditableRichEditor-content{
+  padding:0 10px;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #cfdae5;
+  position: relative;
+  &>.ant-btn{
+    position: absolute;
+    left:50%;
+    top:50%;
+    display: none;
+    margin-left: -40px;
+    margin-top: -20px;
+  }
+  &:hover>.ant-btn{
+    display: block;
+  }
+}
+.editorHidden-markdown{
+  .editorHidden{
+    padding:0
+  }
+  .editorHidden>div:first-child{
+    display: none;
+  }
+  .RichEditor-editor{
+    border-top: 0;
+    font-size:12px;
+  }
+}
+
+.RichEditor-root{
+  padding:10px;
+  font-size: 12px;
+  .RichEditor-editor{
+    font-size:12px;
+  }
+  .RichEditor-styleButton{
+    margin: 0 !important;
+  }
+}
+pre.EditableRichEditor-content-text{
+  font-size:12px;
+  line-height: 1.5;
+  height: 200px;
+  white-space: pre-line;
+  p{
+    margin-bottom: 0px;
+  }
+}
+.EditableRichEditor .EditableRichEditor-content{
+  padding:10px;
+  min-height: 200px;
+}
+.RichEditor-editor .public-DraftEditor-content{
+  padding:0;
+  margin:0;
+  min-height: 200px;
+  height: 100px;
+  overflow-y:auto;
+}

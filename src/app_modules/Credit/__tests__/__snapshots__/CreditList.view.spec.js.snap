@@ -1,0 +1,323 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreditListView 组件是否渲染 CreditListView Component should be render 1`] = `
+<Card
+  type="inner"
+>
+  <AdvancedSearchForm
+    filterSubmitHandler={[Function]}
+    keysOption={
+      Array [
+        Object {
+          "label": "姓名",
+          "value": "1",
+        },
+      ]
+    }
+    module=""
+    showConfig={false}
+  >
+    <Select
+      choiceTransitionName="zoom"
+      label="不良事件"
+      name="adversevent"
+      placeholder="请选择"
+      prefixCls="ant-select"
+      renderItem={[Function]}
+      showSearch={false}
+      transitionName="slide-up"
+    />
+    <CalendarPicker
+      format="YYYY-MM-DD"
+      label="入库时间"
+      maxDate="2299-01-01"
+      minDate="1900-01-01"
+      name="inputTimeStr"
+      ranges={
+        Object {
+          "今天": Array [
+            "2018-02-24T00:51:58.194Z",
+            "2018-02-24T00:51:58.194Z",
+          ],
+          "近七天": Array [
+            "2018-02-18T00:51:58.194Z",
+            "2018-02-24T00:51:58.195Z",
+          ],
+          "近三十天": Array [
+            "2018-01-26T00:51:58.195Z",
+            "2018-02-24T00:51:58.195Z",
+          ],
+          "近三天": Array [
+            "2018-02-22T00:51:58.194Z",
+            "2018-02-24T00:51:58.194Z",
+          ],
+        }
+      }
+      showToday={true}
+    />
+  </AdvancedSearchForm>
+  <DataTable
+    columns={
+      Array [
+        Object {
+          "dataIndex": "id",
+          "render": [Function],
+          "title": "操作",
+          "width": 80,
+        },
+        Object {
+          "dataIndex": "name",
+          "key": "name",
+          "render": [Function],
+          "sorter": true,
+          "title": "姓名",
+          "width": 120,
+        },
+        Object {
+          "dataIndex": "number",
+          "key": "number",
+          "title": "电话号码",
+          "width": 120,
+        },
+        Object {
+          "dataIndex": "jobTitle",
+          "key": "jobTitle",
+          "title": "职位名称",
+          "width": 170,
+        },
+        Object {
+          "dataIndex": "sex",
+          "key": "sex",
+          "render": [Function],
+          "title": "性别",
+          "width": 120,
+        },
+        Object {
+          "dataIndex": "age",
+          "key": "age",
+          "sorter": true,
+          "title": "年龄",
+          "width": 180,
+        },
+        Object {
+          "dataIndex": "company",
+          "key": "company",
+          "title": "公司",
+          "width": 180,
+        },
+        Object {
+          "dataIndex": "workingSeniority",
+          "key": "workingSeniority",
+          "title": "工作年限",
+          "width": 180,
+        },
+        Object {
+          "dataIndex": "inputTime",
+          "key": "inputTime",
+          "render": [Function],
+          "sorter": true,
+          "title": "入库时间",
+          "width": 180,
+        },
+        Object {
+          "dataIndex": "record",
+          "key": "record",
+          "title": "不良事件",
+          "width": 180,
+        },
+      ]
+    }
+    dataSource={Array []}
+    loading={false}
+    onChange={[Function]}
+    page={Object {}}
+    pagination={
+      Object {
+        "pageSizeOptions": Array [
+          "10",
+          "20",
+          "50",
+          "100",
+        ],
+        "showSizeChanger": true,
+        "showTotal": [Function],
+      }
+    }
+    prefixCls="ant-table"
+    scroll={
+      Object {
+        "y": 500,
+      }
+    }
+    showConfig={false}
+    showQuickJumper={true}
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  />
+</Card>
+`;
+
+exports[`CreditListView 组件是否渲染shallow CreditListView Component should be render 1`] = `
+<Card
+  type="inner"
+>
+  <AdvancedSearchForm
+    filterSubmitHandler={[Function]}
+    keysOption={
+      Array [
+        Object {
+          "label": "姓名",
+          "value": "1",
+        },
+      ]
+    }
+    module=""
+    showConfig={false}
+  >
+    <Select
+      choiceTransitionName="zoom"
+      label="不良事件"
+      name="recordId"
+      placeholder="请选择"
+      prefixCls="ant-select"
+      renderItem={[Function]}
+      showSearch={false}
+      transitionName="slide-up"
+    />
+    <CalendarPicker
+      format="YYYY-MM-DD"
+      label="入库时间"
+      maxDate="2299-01-01"
+      minDate="1900-01-01"
+      name="inputTimeStr"
+      ranges={
+        Object {
+          "今天": Array [
+            "2018-05-08T07:36:46.943Z",
+            "2018-05-08T07:36:46.943Z",
+          ],
+          "近七天": Array [
+            "2018-05-02T07:36:46.943Z",
+            "2018-05-08T07:36:46.944Z",
+          ],
+          "近三十天": Array [
+            "2018-04-09T07:36:46.944Z",
+            "2018-05-08T07:36:46.944Z",
+          ],
+          "近三天": Array [
+            "2018-05-06T07:36:46.943Z",
+            "2018-05-08T07:36:46.943Z",
+          ],
+        }
+      }
+      showToday={true}
+    />
+  </AdvancedSearchForm>
+  <DataTable
+    columns={
+      Array [
+        Object {
+          "dataIndex": "id",
+          "render": [Function],
+          "title": "操作",
+          "width": 80,
+        },
+        Object {
+          "dataIndex": "name",
+          "key": "name",
+          "render": [Function],
+          "sorter": true,
+          "title": "姓名",
+          "width": 120,
+        },
+        Object {
+          "dataIndex": "mobilephone",
+          "key": "mobilephone",
+          "title": "电话号码",
+          "width": 120,
+        },
+        Object {
+          "dataIndex": "jobTitle",
+          "key": "jobTitle",
+          "render": [Function],
+          "title": "职位名称",
+          "width": 170,
+        },
+        Object {
+          "dataIndex": "sex",
+          "key": "sex",
+          "render": [Function],
+          "title": "性别",
+          "width": 120,
+        },
+        Object {
+          "dataIndex": "age",
+          "key": "age",
+          "sorter": true,
+          "title": "年龄",
+          "width": 180,
+        },
+        Object {
+          "dataIndex": "company",
+          "key": "company",
+          "title": "公司",
+          "width": 180,
+        },
+        Object {
+          "dataIndex": "workingSeniority",
+          "key": "workingSeniority",
+          "title": "工作年限",
+          "width": 180,
+        },
+        Object {
+          "dataIndex": "inputTime",
+          "key": "inputTime",
+          "render": [Function],
+          "sorter": true,
+          "title": "入库时间",
+          "width": 180,
+        },
+        Object {
+          "dataIndex": "recordId",
+          "key": "recordId",
+          "render": [Function],
+          "title": "不良事件",
+          "width": 180,
+        },
+      ]
+    }
+    dataSource={Array []}
+    loading={false}
+    onChange={[Function]}
+    page={Object {}}
+    pagination={
+      Object {
+        "pageSizeOptions": Array [
+          "10",
+          "20",
+          "50",
+          "100",
+        ],
+        "showSizeChanger": true,
+        "showTotal": [Function],
+      }
+    }
+    prefixCls="ant-table"
+    scroll={
+      Object {
+        "y": 500,
+      }
+    }
+    showConfig={false}
+    showQuickJumper={true}
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  />
+</Card>
+`;

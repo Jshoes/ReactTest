@@ -1,0 +1,103 @@
+[class*='channel-img-']{
+	border: 1px solid #dee5ec
+}
+.channel-img-1 {
+	width: 100px; height: 56px;
+	background: url('channel_sprites.png') -0 -56px;
+}
+
+
+.channel-img-2 {
+	width: 100px; height: 56px;
+	background: url('channel_sprites.png') -0 -448px;
+}
+
+
+.channel-img-3 {
+	width: 100px; height: 56px;
+	background: url('channel_sprites.png') -0 -112px;
+}
+
+
+.channel-img-4 {
+	width: 100px; height: 56px;
+	background: url('channel_sprites.png') -0 -168px;
+}
+
+
+.channel-img-5 {
+	width: 100px; height: 56px;
+	background: url('channel_sprites.png') -0 -224px;
+}
+
+
+.channel-img-6 {
+	width: 100px; height: 56px;
+	background: url('channel_sprites.png') -0 -280px;
+}
+
+
+.channel-img-7 {
+	width: 100px; height: 56px;
+	background: url('channel_sprites.png') -0 -336px;
+}
+
+
+.channel-img-8 {
+	width: 100px; height: 56px;
+	background: url('channel_sprites.png') -0 -392px;
+}
+
+
+.channel-img-9 {
+	width: 100px; height: 56px;
+	background: url('channel_sprites.png') -0 -0;
+}
+
+
+.channel-img-10 {
+	width: 100px; height: 56px;
+	background: url('channel_sprites.png') -0 -504px;
+}
+
+
+.channel-img-11 {
+	width: 100px; height: 56px;
+	background: url('channel_sprites.png') -0 -560px;
+}
+
+
+.channel-img-12 {
+	width: 100px; height: 56px;
+	background: url('channel_sprites.png') -0 -616px;
+}
+
+
+.channel-img-13 {
+	width: 100px; height: 56px;
+	background: url('channel_sprites.png') -0 -672px;
+}
+
+
+.channel-img-14 {
+	width: 100px; height: 56px;
+	background: url('channel_sprites.png') -0 -728px;
+}
+
+
+.channel-img-15 {
+	width: 100px; height: 56px;
+	background: url('channel_sprites.png') -0 -784px;
+}
+
+
+.channel-img-16 {
+	width: 100px; height: 56px;
+	background: url('channel_sprites.png') -0 -840px;
+}
+
+
+.channel-img-17 {
+	width: 100px; height: 56px;
+	background: url('channel_sprites.png') -0 -896px;
+}

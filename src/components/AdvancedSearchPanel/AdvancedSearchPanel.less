@@ -1,0 +1,33 @@
+.new-advanced-search-panel{
+	padding: 20px 20px;
+	background-color: #f4f4f6;
+	.new-advanced-search-form{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		.search-title{
+			position: relative;
+			h5{
+				display: inline-block;
+				line-height: 32px;
+				font-weight: bold;
+			}
+			.ant-btn-group{
+				position: absolute;
+				right: 0;
+				button{
+					border: 0;
+					background-color: transparent;
+				}
+			}
+		}
+		.search-content{
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			.ant-calendar-picker-container{
+				position: fixed;
+			}
+		}
+	}
+}

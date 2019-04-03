@@ -1,0 +1,82 @@
+.cascade-multiple-selection {
+  font-size: 14px;
+  ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  input[type="checkbox"] {
+    vertical-align: middle;
+  }
+
+  .selectNodes {
+    // background-color: #fff;
+    .node {
+      position: relative;
+      display: inline-block;
+      border: 1px solid #32a0ee;
+      border-radius: 4px;
+      color: #32a0ee;
+      padding: 2px 6px;
+      margin: 6px 4px;
+
+      .node-close {
+        margin-left: 6px;
+      }
+    }
+  }
+}
+
+.caseMutile{
+  position: relative;
+  padding-left: 100px;
+  height: 400px;
+  overflow: visible;
+}
+.renderSider{
+  position: absolute;
+  left:0;
+  top:0;
+  width: 100px;
+  bottom: 50px;
+  height: 400px;
+  overflow: auto;
+  .catalog {
+    padding: 2px 4px;
+    &.active{
+      color: #fff;
+      background: #32a0ee;
+      cursor: pointer;
+    }
+  }
+}
+.catalog-active-node{
+  position: relative;
+  .nodeItem,.nodeSubItem{
+    vertical-align: top;
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    color: #000;
+    padding: 2px 4px;
+    &.active{
+      color: #fff;
+      background: #32a0ee;
+      cursor: pointer;
+      .nodeItemCon{
+        display: block;
+      }
+    }
+    .nodeItemCon{
+      display: none;
+      z-index: 999;
+      position: absolute;
+      left: 0;
+      width:320px;
+      top:100%;
+      // border: 1px solid #dedede;
+      background: #fff;
+    }
+  }
+}
