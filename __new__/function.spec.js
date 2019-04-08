@@ -47,6 +47,30 @@ describe('checktag sth',()=>{
   //   // 判断 props.onAddClick 是否被调用
   //   expect(props.onAddClick).toBeCalled()
   // })
+
+  /*reducer结合actions 测试*/
+  // it('saveList should be data',()=>{
+  //
+  //   let data={
+  //     items:[{id:1}],
+  //     totalCount:20,
+  //     currentPage:1,
+  //   }
+  //   let result=Object.assign({},initialState,{
+  //     items:data.items,
+  //     total:data.totalCount,
+  //     current:data.currentPage
+  //   })
+  //   expect(reducer(initialState,actions.saveList(data))).toEqual(result)
+  // })
+
+  /*是否调用测试*/
+  // it('AutoBackupForm 不调用listAction', () => {
+  //   expect(props.actions.itemAction.mock.calls.length).toEqual(0)
+  // })
+
+  /*state判断*/
+  // expect(wrapper.state("catalog")).toBe("1")
 })
 
 /*reducer测试*/
